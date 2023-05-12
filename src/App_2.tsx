@@ -17,11 +17,11 @@ function App() {
 
         // Для роботи розкоментувати fetch-запит. Якась лажа з пушем на гітхаб
 
-    // const fetchRequest = () => {
-    //     fetch('https://jsonplaceholder.typicode.com/todos')
-    //         .then(response => response.json())
-    //         .then(json => setTodos(json))
-    // }
+    const fetchRequest = () => {
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            .then(json => setTodos(json))
+    }
     const showTodos = () => {
         fetchRequest()
     }
